@@ -1,0 +1,40 @@
+.flip-card-inner {
+    position: relative;
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+}
+
+.flip-card-front,
+.flip-card-back,
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.flip-card {
+    width: 450px;
+    height: 450px;
+}
+
+.flip-card-front {
+    background-color: lightsteelblue;
+    color: lavenderblush;
+}
+
+.flip-card-back {
+    background-color: indianred;
+    transform: rotateY(180deg);
+    color: lavenderblush;
+}
+
+.flip-card-inner:hover {
+    transform: rotateY(180deg);
+}
+
+.flip-card-inner {
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
